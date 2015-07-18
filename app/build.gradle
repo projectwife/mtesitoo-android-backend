@@ -24,6 +24,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.0'
     compile 'com.mcxiaoke.volley:library:1.0.+'
+    compile 'com.google.code.findbugs:jsr305:2.0.1'
     // Robolectric
     testCompile 'junit:junit:4.12'
     testCompile 'org.hamcrest:hamcrest-core:1.1'

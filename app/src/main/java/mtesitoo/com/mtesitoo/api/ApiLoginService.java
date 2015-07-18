@@ -12,14 +12,14 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.HashMap;
 import java.util.Map;
 
 import mtesitoo.com.mtesitoo.C;
 import mtesitoo.com.mtesitoo.logic.LoginService;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * Api-based implementation of {@link LoginService}
@@ -29,12 +29,20 @@ public class ApiLoginService implements LoginService {
   private static final String CLIENT_SECRET = "mtesitooclientsecret";
   private static final String TAG = ApiLoginService.class.getSimpleName();
   private final RequestQueue queue;
+  /**
+   * Caching oauth tokens for the lifetime of the app, since we set OpenCart to never expire tokens.
+   */
+  private String oauthToken;
 
   public ApiLoginService(Context context) {
     queue = Volley.newRequestQueue(context);
   }
 
   public void getAuthToken(final Callback<String> callback) {
+    if (oauthToken != null) {
+      callback.onResult(oauthToken);
+      return;
+    }
 
     String url = C.api.server + C.api.oauth_path;
 
@@ -47,7 +55,9 @@ public class ApiLoginService implements LoginService {
             JSONObject jsonResponse = null;
             try {
               jsonResponse = new JSONObject(response);
-              callback.onResult(jsonResponse.getString("access_token"));
+              String oauthToken = jsonResponse.getString("access_token");
+              ApiLoginService.this.oauthToken = oauthToken;
+              callback.onResult(oauthToken);
             } catch (JSONException e) {
               callback.onError(e);
             }
