@@ -132,15 +132,16 @@
 				"88248ba5-445a-2117-94b0-0cba7cd49e98",
 				"cc961058-4e19-693d-fbb2-ef6f80f048ff",
 				"1c18c0c8-8daa-9015-cdff-6535337262d4",
-				"a578ed0b-0a3f-e249-342f-847369c57516"
+				"a578ed0b-0a3f-e249-342f-847369c57516",
+				"96e8797b-fe5e-21cf-66ed-11230b5bc7d1"
 			],
 			"owner": 0
 		}
 	],
 	"timestamp": 1395526613190,
 	"owner": 0,
+	"remoteLink": "",
 	"public": false,
-	"hasRequests": true,
 	"requests": [
 		{
 			"id": "00dcbd6d-3312-11d9-0f4b-1923633fe5fc",
@@ -1493,6 +1494,25 @@
 			"collectionId": "98aa46f3-186a-8d11-4a05-52f5b7a390dc",
 			"responses": [],
 			"folder": "10c7a984-f355-fb28-1e21-3d47c6cc4483"
+		},
+		{
+			"id": "96e8797b-fe5e-21cf-66ed-11230b5bc7d1",
+			"headers": "Accept: application/json\nAuthorization: Bearer fCyjxH6JsozxyrsRugFvF2kufgosE9NOuUjmahvx\n",
+			"url": "{{url_base}}/api/v1/product/product/186",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443121773707,
+			"name": "/product/{id}",
+			"description": "delete a product\n\nthe vendor must be logged in and must own the specified product\n\nNOT YET IMPLEMENTED",
+			"collectionId": "98aa46f3-186a-8d11-4a05-52f5b7a390dc",
+			"responses": []
 		},
 		{
 			"id": "97d3ef6f-6576-1e93-7114-1701478a7fa0",
