@@ -1699,7 +1699,7 @@
 		{
 			"id": "be4201e1-8906-8518-e602-8579af45525e",
 			"headers": "Accept: application/json\nAuthorization: Bearer fCyjxH6JsozxyrsRugFvF2kufgosE9NOuUjmahvx\n",
-			"url": "{{url_base}}/api/v1/product/145/image",
+			"url": "{{url_base}}/api/v1/product/product/145/image",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -1728,7 +1728,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1443525722443,
+			"time": 1443541164299,
 			"name": "/product/{id}/image",
 			"description": "upload an image for the specified product\n\nvendor must be logged in and own the product\n\n* `sort_order` is not used for the main product image\n\nNOT YET IMPLEMENTED",
 			"collectionId": "5f23b781-399a-0ea8-4c09-25e641bf847f",
