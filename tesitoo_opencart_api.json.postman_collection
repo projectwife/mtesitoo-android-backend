@@ -147,7 +147,9 @@
 			"description": "",
 			"order": [
 				"bf01937e-08b0-0434-08bc-29f0a787f18b",
-				"094fd136-abc3-5958-a311-cfe24bf8adc1"
+				"094fd136-abc3-5958-a311-cfe24bf8adc1",
+				"e02b16cc-d154-f05d-ef8c-7848a0d70779",
+				"5fef9952-67a0-70ee-b6c6-cc25082e4fee"
 			],
 			"owner": 0,
 			"collectionId": "09e5ef90-5298-4f38-70c9-822942a5e4b5"
@@ -885,6 +887,32 @@
 			"collectionId": "817b862f-a5d1-8ab8-18ae-54ee990eaf61",
 			"preRequestScript": "",
 			"folder": "52968135-197e-8bb0-2ca3-e678e3d7efc9"
+		},
+		{
+			"id": "5fef9952-67a0-70ee-b6c6-cc25082e4fee",
+			"headers": "Accept: application/json\nAuthorization: Bearer Il8RORNwiVCPBK7NQUTyJ0YCbaQIccuLFLVsAu2R\n",
+			"url": "{{url_base}}/api/v1/vendor/order_product/4",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "order_status_id",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1452180372507,
+			"name": "/order_product/{id}",
+			"description": "Edit details of a specific product in an order\n\nThe id in the URL is the `order_product_id`, not the `order_id`.\n\nThis is most commonly used to change the state of an ordered product.\n\nCurrently the only supported fields are:\n\n* `order_status_id` (which should be one of the statuses listedin oc_order_status)\n\nThe order entity will also be updated if it contains no other products.\n",
+			"collectionId": "817b862f-a5d1-8ab8-18ae-54ee990eaf61",
+			"responses": []
 		},
 		{
 			"id": "600e3a7c-23b5-e5dd-3cc8-0d2d080f9412",
@@ -2188,6 +2216,25 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"folder": "52968135-197e-8bb0-2ca3-e678e3d7efc9"
+		},
+		{
+			"id": "e02b16cc-d154-f05d-ef8c-7848a0d70779",
+			"headers": "Accept: application/json\nAuthorization: Bearer PJabg6b07jkU5CJtFgYiDXnyQO2G0CVSNQXAoyde\n",
+			"url": "{{url_base}}/api/v1/vendor/order_product/4",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1452180369455,
+			"name": "/order_product/{id}",
+			"description": "Get details of a specific product in an order.\n\nThe id in the URL is the `order_product_id`, not the `order_id`.\n\nThe product details will only be returned if the ordered product is\nin the catalog of the logged-in vendor.",
+			"collectionId": "817b862f-a5d1-8ab8-18ae-54ee990eaf61",
+			"responses": []
 		},
 		{
 			"id": "e0589df7-a7da-e721-845b-00b0900aa07c",
