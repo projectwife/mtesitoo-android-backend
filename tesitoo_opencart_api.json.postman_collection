@@ -2450,7 +2450,7 @@
 			"data": [
 				{
 					"key": "username",
-					"value": "joeTheVendor66",
+					"value": "joeTheVendor",
 					"type": "text",
 					"enabled": true
 				},
@@ -2480,7 +2480,7 @@
 				},
 				{
 					"key": "address_1",
-					"value": null,
+					"value": "1 Street",
 					"type": "text",
 					"enabled": true
 				},
@@ -2492,31 +2492,37 @@
 				},
 				{
 					"key": "city",
-					"value": null,
+					"value": "London",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "postcode",
-					"value": null,
+					"value": "E1",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "country_id",
-					"value": null,
+					"value": "222",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "zone_id",
-					"value": null,
+					"value": "23",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "telephone",
-					"value": null,
+					"value": "23506021",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "company",
+					"value": "JoeThe VendorLtd",
 					"type": "text",
 					"enabled": true
 				}
@@ -2526,9 +2532,9 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1453031979269,
+			"time": 1453162926848,
 			"name": "/register",
-			"description": "Register as a new vendor\n\nThe OpenCart interface normally requires a vendor to accept Terms and Conditions\nbefore registration will be accepted. I think this should be handled\nclient-side - nothing needs to be passed in the request.\n",
+			"description": "Register as a new vendor\n\nThe OpenCart interface normally requires a vendor to accept Terms and Conditions\nbefore registration will be accepted. I think this should be handled\nclient-side - nothing needs to be passed in the request.\n\nPassword confirmation check should be done on the client side. Only one field\n(`password`) needs to be set.\n\n* `company` is required - it's used as the vendor display name\n* `country_id` should be an id of a row in the `oc_country` table\n* `zone_id` should be an id of a row in the `oc_zone` table",
 			"collectionId": "80332381-aab3-54ae-25ba-2938107101e5",
 			"responses": []
 		},
