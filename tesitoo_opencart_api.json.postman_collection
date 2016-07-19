@@ -151,7 +151,11 @@
 				"87fa0617-7236-4832-ebae-a2b0dac6eed2",
 				"3c31d21d-3443-84dc-9bff-902661e85af2",
 				"f5ea860c-473b-7f32-aa09-d1e0874cb740",
-				"739dfe7f-d2eb-9009-3703-23be4c78ee6d"
+				"739dfe7f-d2eb-9009-3703-23be4c78ee6d",
+				"a2fdcf88-5f39-6fd6-04e3-12523ae5ec45",
+				"c730cbdb-8e1a-b3da-a254-51e8bfdb69e2",
+				"dae0f298-4a41-808b-cde7-b210815c0865",
+				"d9165b5c-83d6-5756-bc9a-3162b852c7a9"
 			],
 			"owner": 0,
 			"collectionId": "09e5ef90-5298-4f38-70c9-822942a5e4b5"
@@ -161,6 +165,7 @@
 	"owner": 0,
 	"remoteLink": "",
 	"public": false,
+	"published": false,
 	"requests": [
 		{
 			"id": "030fffaf-f839-c0f4-286b-88281bf92765",
@@ -1532,8 +1537,8 @@
 		},
 		{
 			"id": "87fa0617-7236-4832-ebae-a2b0dac6eed2",
-			"headers": "Accept: application/json\nAuthorization: Bearer PJabg6b07jkU5CJtFgYiDXnyQO2G0CVSNQXAoyde\n",
-			"url": "{{url_base}}/api/v1/vendor/order/2",
+			"headers": "Accept: application/json\nAuthorization: Bearer VOQsuhxEb1gcDqCgH1CvuW9bU2eDBtz6cg76ilHx\n",
+			"url": "{{url_base}}/api/v1/vendor/order/14",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -1543,12 +1548,11 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1449176262909,
+			"time": 1468967677243,
 			"name": "/order/{id}",
 			"description": "Get details of a specific order.\n\n - all products will be listed\n\nOnly the ordered products in the catalog of the logged-in vendor will be returned.",
 			"collectionId": "60d8cd34-28da-68e4-2a72-654371c8ea95",
-			"responses": [],
-			"folder": "43604fbd-7595-fd50-e43f-d06a1ceee00c"
+			"responses": []
 		},
 		{
 			"id": "90be8f53-95ec-e790-6973-26be8b27abba",
@@ -1638,7 +1642,7 @@
 				},
 				{
 					"key": "file",
-					"value": null,
+					"value": "",
 					"type": "file",
 					"enabled": true
 				},
@@ -1741,6 +1745,25 @@
 			"collectionId": "60d8cd34-28da-68e4-2a72-654371c8ea95",
 			"responses": [],
 			"folder": "c9e56292-b79b-467a-d8d7-07f033a677b1"
+		},
+		{
+			"id": "a2fdcf88-5f39-6fd6-04e3-12523ae5ec45",
+			"headers": "Accept: application/json\nAuthorization: Bearer PJabg6b07jkU5CJtFgYiDXnyQO2G0CVSNQXAoyde\n",
+			"url": "{{url_base}}/api/v1/vendor/profile",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1468971946264,
+			"name": "/profile",
+			"description": "Get profile details of the currently logged in vendor.",
+			"collectionId": "60d8cd34-28da-68e4-2a72-654371c8ea95",
+			"responses": []
 		},
 		{
 			"id": "a6ad845f-4072-e432-733d-ab77d7cb830e",
@@ -2258,6 +2281,25 @@
 			"folder": "c9e56292-b79b-467a-d8d7-07f033a677b1"
 		},
 		{
+			"id": "c730cbdb-8e1a-b3da-a254-51e8bfdb69e2",
+			"headers": "Accept: application/json\nAuthorization: Bearer PJabg6b07jkU5CJtFgYiDXnyQO2G0CVSNQXAoyde\n",
+			"url": "{{url_base}}/api/v1/vendor/profile",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1468971951102,
+			"name": "/profile",
+			"description": "Set profile details for the currently logged in vendor.",
+			"collectionId": "60d8cd34-28da-68e4-2a72-654371c8ea95",
+			"responses": []
+		},
+		{
 			"id": "c99cd27d-572f-abff-2e48-a4e9575c23f6",
 			"headers": "Accept: application/json\nAuthorization: Bearer fCyjxH6JsozxyrsRugFvF2kufgosE9NOuUjmahvx\n",
 			"url": "{{url_base}}/api/v1/account/newsletter",
@@ -2425,6 +2467,51 @@
 			"collectionId": "60d8cd34-28da-68e4-2a72-654371c8ea95",
 			"responses": [],
 			"folder": "ecbde979-b452-906b-2308-67b37eb46c5c"
+		},
+		{
+			"id": "d9165b5c-83d6-5756-bc9a-3162b852c7a9",
+			"headers": "Accept: application/json\nAuthorization: Bearer PJabg6b07jkU5CJtFgYiDXnyQO2G0CVSNQXAoyde\n",
+			"url": "{{url_base}}/api/v1/vendor/profile/image",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1468972313374,
+			"name": "/profile/image",
+			"description": "Deletes the profile image for the currently logged in vendor.",
+			"collectionId": "60d8cd34-28da-68e4-2a72-654371c8ea95",
+			"responses": []
+		},
+		{
+			"id": "dae0f298-4a41-808b-cde7-b210815c0865",
+			"headers": "Accept: application/json\nAuthorization: Bearer PJabg6b07jkU5CJtFgYiDXnyQO2G0CVSNQXAoyde\n",
+			"url": "{{url_base}}/api/v1/vendor/profile/image",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1468972158517,
+			"name": "/profile/image",
+			"description": "Upload a profile image for the currently logged in vendor.",
+			"collectionId": "60d8cd34-28da-68e4-2a72-654371c8ea95",
+			"responses": []
 		},
 		{
 			"id": "dcea7674-9985-de86-9fd7-353175d58bbd",
