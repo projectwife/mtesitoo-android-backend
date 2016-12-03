@@ -38,7 +38,8 @@
 			"description": "Admin/Vendor",
 			"order": [
 				"1fb223b3-3f95-8c8a-add1-b5cb4adf8383",
-				"c938e66f-dc9f-1999-9bb8-7a6a53f3802f"
+				"c938e66f-dc9f-1999-9bb8-7a6a53f3802f",
+				"386910ce-132e-3414-731b-dcad0aa5f542"
 			],
 			"owner": 0
 		},
@@ -165,7 +166,6 @@
 	"timestamp": 1395526613190,
 	"owner": 0,
 	"public": false,
-	"published": false,
 	"requests": [
 		{
 			"id": "018a8622-a925-ca03-a2c3-5d03e8741715",
@@ -728,6 +728,40 @@
 			"collectionId": "1f16611b-6690-5fa6-cd67-ed6fae8d4176",
 			"responses": [],
 			"folder": "a63895d3-47ad-aa74-6141-5fe38ae6d767"
+		},
+		{
+			"id": "386910ce-132e-3414-731b-dcad0aa5f542",
+			"headers": "Accept: application/json\nAuthorization: Bearer fCyjxH6JsozxyrsRugFvF2kufgosE9NOuUjmahvx\n",
+			"url": "{{url_base}}/api/v1/admin/password",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "old_password",
+					"value": "password",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "new_password",
+					"value": "password",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1480789074608,
+			"name": "/password",
+			"description": "Changes the password of the current logged in user",
+			"collectionId": "1f16611b-6690-5fa6-cd67-ed6fae8d4176",
+			"responses": []
 		},
 		{
 			"id": "483f1336-0a28-83a8-306d-72f301469deb",
