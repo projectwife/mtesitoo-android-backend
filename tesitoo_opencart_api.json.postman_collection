@@ -2696,7 +2696,7 @@
 				{
 					"name": "/product/{id}",
 					"request": {
-						"url": "{{url_base}}/api/v1/product/product/198",
+						"url": "{{url_base}}/api/v1/product/product/123",
 						"method": "POST",
 						"header": [
 							{
@@ -2706,7 +2706,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer Uqv41KFIAOd5B0IiSL2RPvr1bRRcOa9IMLE6QhWZ",
+								"value": "Bearer afMDvtG5Iqc8tMmGB16RedulEfxOelQkO8wQBWH3",
 								"description": ""
 							}
 						],
@@ -2723,11 +2723,17 @@
 									"key": "quantity",
 									"value": "45",
 									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "expiration_date",
+									"value": "2015-02-07 07:07:07",
+									"type": "text",
 									"enabled": true
 								}
 							]
 						},
-						"description": "edit product details\n\nthe product must be owned by the current logged in vendor\n\nfields for which editing is implemented:\n\n* `name`\n* `description`\n* `tag`\n* `meta_title`\n* `meta_description`\n* `meta_keyword`\n* `category_ids`: a comma-separated list of category ids. This will replace the entire previous list of category ids.\n* `price`: float\n* `quantity`: int\n* `minimum`: int\n* `model`: text\n* `stock_status_id`: should be one of the values in `oc_stock_status` table\n* `weight_class_id`: should be one of the values in `oc_weight_class` table\n* `weight`: float\n* `length_class_id`: should be one of the values in `oc_length_class` table\n* `length`: float\n* `width`: float\n* `height`: float\n"
+						"description": "edit product details\n\nthe product must be owned by the current logged in vendor\n\nfields for which editing is implemented:\n\n* `name`\n* `description`\n* `tag`\n* `meta_title`\n* `meta_description`\n* `meta_keyword`\n* `category_ids`: a comma-separated list of category ids. This will replace the entire previous list of category ids.\n* `price`: float\n* `quantity`: int\n* `minimum`: int\n* `model`: text\n* `stock_status_id`: should be one of the values in `oc_stock_status` table\n* `weight_class_id`: should be one of the values in `oc_weight_class` table\n* `weight`: float\n* `length_class_id`: should be one of the values in `oc_length_class` table\n* `length`: float\n* `width`: float\n* `height`: float\n* `expiration_date`: datetime in format \"yyyy-MM-dd\" or \"yyyy-MM-dd hh:mm:ss\"\n"
 					},
 					"response": []
 				},
@@ -3133,7 +3139,7 @@
 					},
 					"response": [
 						{
-							"id": "7e0424da-1a94-4c70-843e-2ed3f0a2df13",
+							"id": "76a34cce-f382-437e-9167-71c0b6546898",
 							"name": "profileImageRequestVardump",
 							"originalRequest": {
 								"url": "{{url_base}}/api/v1/vendor/profile/image",
