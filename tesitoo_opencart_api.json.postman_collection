@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "Tesitoo-Opencart-API",
-		"_postman_id": "19248578-0d9b-6699-7843-ae329b4ee538",
+		"_postman_id": "1b5e7b5d-f4a5-1dbd-1aa9-504c34b75748",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -515,7 +515,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -793,7 +796,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -963,7 +969,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -985,7 +994,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1007,7 +1019,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1073,7 +1088,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Admin/vendor logout\n"
 					},
 					"response": []
@@ -1117,6 +1135,39 @@
 						"description": "Changes the password of the current logged in user"
 					},
 					"response": []
+				},
+				{
+					"name": "/forgot_password",
+					"request": {
+						"url": "{{url_base}}/api/v1/admin/forgot_password",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer fCyjxH6JsozxyrsRugFvF2kufgosE9NOuUjmahvx",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "vendorD",
+									"type": "text",
+									"enabled": true,
+									"warning": ""
+								}
+							]
+						},
+						"description": "Tells the server to reset the user's password.\n\nThe server will notify the user by email."
+					},
+					"response": []
 				}
 			]
 		},
@@ -1141,7 +1192,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1235,7 +1289,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1773,7 +1830,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1831,7 +1891,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1892,7 +1955,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1909,7 +1975,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1931,7 +2000,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1959,7 +2031,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1981,7 +2056,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2003,7 +2081,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2025,7 +2106,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2047,7 +2131,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2069,7 +2156,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2091,7 +2181,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2145,7 +2238,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2199,7 +2295,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2221,7 +2320,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2243,7 +2345,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Retrieve the list of available order statuses."
 					},
 					"response": []
@@ -2271,7 +2376,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2337,7 +2445,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2359,7 +2470,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2381,7 +2495,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2403,7 +2520,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2425,7 +2545,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2447,7 +2570,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2469,7 +2595,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2491,7 +2620,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2513,7 +2645,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2576,7 +2711,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Request a collection of all vendors"
 					},
 					"response": []
@@ -2598,7 +2736,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Request a specific vendor"
 					},
 					"response": []
@@ -2620,7 +2761,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Request products for a vendor"
 					},
 					"response": []
@@ -2830,7 +2974,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "delete particular images from the specified product\n\nthe image can be a main image or one of the auxiliary images\n\nvendor must be logged in and own the product\n\n* `files` parameter is a comma separated list of filenames of the images\n  to be deleted.\n  The filenames may be the -500x500.jpg version returned in product requests."
 					},
 					"response": []
@@ -2858,7 +3005,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Get a list of all the open orders belonging to the current logged in vendor.\n\nParameters:\n- `filter_order_status`: a comma separated list of integers matching one or more of the `order_status_id` values as returned by the `GET /common/order_status` request. If the parameter is omitted, orders of any status will be returned."
 					},
 					"response": []
@@ -2880,7 +3030,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Get details of a specific order.\n\n - all products will be listed\n\nOnly the ordered products in the catalog of the logged-in vendor will be returned."
 					},
 					"response": []
@@ -2902,7 +3055,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Get details of a specific product in an order.\n\nThe id in the URL is the `order_product_id`, not the `order_id`.\n\nThe product details will only be returned if the ordered product is\nin the catalog of the logged-in vendor."
 					},
 					"response": []
@@ -3080,7 +3236,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Get profile details of the currently logged in vendor."
 					},
 					"response": []
@@ -3102,7 +3261,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Set profile details for the currently logged in vendor."
 					},
 					"response": []
@@ -3139,7 +3301,7 @@
 					},
 					"response": [
 						{
-							"id": "76a34cce-f382-437e-9167-71c0b6546898",
+							"id": "dc893209-d845-4d24-b0a2-275943046978",
 							"name": "profileImageRequestVardump",
 							"originalRequest": {
 								"url": "{{url_base}}/api/v1/vendor/profile/image",
@@ -3148,12 +3310,12 @@
 									{
 										"key": "Accept",
 										"value": "application/json",
-										"enabled": true
+										"description": ""
 									},
 									{
 										"key": "Authorization",
 										"value": "Bearer PJabg6b07jkU5CJtFgYiDXnyQO2G0CVSNQXAoyde",
-										"enabled": true
+										"description": ""
 									}
 								],
 								"body": {
@@ -3245,7 +3407,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Delete the profile image for the currently logged in vendor."
 					},
 					"response": []
@@ -3267,7 +3432,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Get a list of all the products belonging to the current logged in vendor."
 					},
 					"response": []
