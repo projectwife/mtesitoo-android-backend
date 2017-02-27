@@ -1168,6 +1168,38 @@
 						"description": "Tells the server to reset the user's password.\n\nThe server will notify the user by email."
 					},
 					"response": []
+				},
+				{
+					"name": "/login_by_code",
+					"request": {
+						"url": "{{url_base}}/api/v1/admin/login_by_code",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer fCyjxH6JsozxyrsRugFvF2kufgosE9NOuUjmahvx",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "c3103d0bf46b25092bf4aa443579674c40ea7a83",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Admin/vendor login by code, for forgotten password situations."
+					},
+					"response": []
 				}
 			]
 		},
@@ -3301,7 +3333,7 @@
 					},
 					"response": [
 						{
-							"id": "dc893209-d845-4d24-b0a2-275943046978",
+							"id": "5442661f-ec62-48d5-b4ca-fad13b0fe6cc",
 							"name": "profileImageRequestVardump",
 							"originalRequest": {
 								"url": "{{url_base}}/api/v1/vendor/profile/image",
