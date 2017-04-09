@@ -2384,6 +2384,28 @@
 						"description": "Retrieve the list of available order statuses."
 					},
 					"response": []
+				},
+				{
+					"name": "/vendor_terms",
+					"request": {
+						"url": "{{url_base}}/api/v1/common/vendor_terms",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer fCyjxH6JsozxyrsRugFvF2kufgosE9NOuUjmahvx",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "fetches the terms and conditions text for vendor sign-up"
+					},
+					"response": []
 				}
 			]
 		},
@@ -3333,7 +3355,7 @@
 					},
 					"response": [
 						{
-							"id": "5442661f-ec62-48d5-b4ca-fad13b0fe6cc",
+							"id": "4b2faf50-0094-4995-879e-2d1828a84178",
 							"name": "profileImageRequestVardump",
 							"originalRequest": {
 								"url": "{{url_base}}/api/v1/vendor/profile/image",
