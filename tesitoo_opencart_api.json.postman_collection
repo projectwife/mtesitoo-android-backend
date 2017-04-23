@@ -2441,6 +2441,44 @@
 			]
 		},
 		{
+			"name": "/notification",
+			"description": "",
+			"item": [
+				{
+					"name": "/device",
+					"request": {
+						"url": "{{url_base}}/api/v1/notification/device",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer fCyjxH6JsozxyrsRugFvF2kufgosE9NOuUjmahvx",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firebase_device_registration_token",
+									"value": "",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Associate a device with the current user for the purposes of Firebase Cloud Messaging."
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "/oauth2",
 			"description": "",
 			"item": [
@@ -3355,7 +3393,7 @@
 					},
 					"response": [
 						{
-							"id": "4b2faf50-0094-4995-879e-2d1828a84178",
+							"id": "32d56ec6-b07a-4fa7-82f9-37e11e9c2029",
 							"name": "profileImageRequestVardump",
 							"originalRequest": {
 								"url": "{{url_base}}/api/v1/vendor/profile/image",
